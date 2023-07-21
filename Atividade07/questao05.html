@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function calcularIdade(anoNascimento, anoAtual) {
+    return anoAtual - anoNascimento;
+}
+
+    let anoNascimento = prompt("Digite o ano de nascimento: ");
+    anoNascimento = parseInt(anoNascimento);
+    let anoAtual = prompt("Digite o ano atual: ");
+    anoAtual = parseInt(anoAtual);
+
+    let idade = calcularIdade(anoNascimento, anoAtual);
+    alert("Idade: " + idade);
+
+    </script>
+</body>
+</html>

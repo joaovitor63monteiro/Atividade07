@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let preferencial = [];
+    let normal = [];
+
+    while (true) {
+    let nome = prompt("Digite o nome do cliente (ou 'Fim' para encerrar): ");
+    if (nome === "Fim") break;
+    let idade = prompt("Digite a idade do cliente: ");
+    idade = parseInt(idade);
+    if (idade >= 60) {
+        preferencial.push(nome);
+    } else {
+        normal.push(nome);
+    }
+}
+
+    alert("Fila preferencial:");
+    for (let i = 0; i < preferencial.length; i++) {
+    alert((i+1) + ": " + preferencial[i]);
+}
+
+    alert("Fila normal:");
+    for (let i = 0; i < normal.length; i++) {
+    alert((i+1) + ": " + normal[i]);
+}
+
+    </script>
+</body>
+</html>

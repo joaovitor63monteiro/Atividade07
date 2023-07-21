@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function verificarEmprestimo(renda, valorParcela) {
+    let maxParcela = renda * 0.3;
+    if (valorParcela <= maxParcela) {
+        return "EMPRÉSTIMO APROVADO";
+    } else {
+        return "EMPRÉSTIMO NÃO APROVADO";
+    }
+}
+
+    let renda = prompt("Digite a renda do cliente: ");
+    renda = parseFloat(renda);
+    let valorParcela = prompt("Digite o valor da parcela: ");
+    valorParcela = parseFloat(valorParcela);
+
+    let resultado = verificarEmprestimo(renda, valorParcela);
+    alert(resultado);
+
+    </script>
+</body>
+</html>
